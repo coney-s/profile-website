@@ -50,7 +50,7 @@ let schools = [
 ];
 
 window.addEventListener("load", function() {
-    // this.fetch("personal-website/jobs.json").then(function(response) {
+    // this.fetch("https://github.com/coney-s/profile-website/blob/main/jobs.json").then(function(response) {
     //     response.json().then(function(json) {
 
     //         console.log(json);
