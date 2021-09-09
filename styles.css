@@ -62,10 +62,6 @@ body {
     padding-bottom: 10px;
 }
 
-/* * {
-    background-color: linen;
-} */
-
 .left {
     float: left;
     width: 30%;
@@ -163,6 +159,7 @@ h3.career {
 
 .item-2 {
   margin-right: 100px;
+  
 }
 
 
@@ -184,6 +181,10 @@ h3.career {
 .skills {
     color: hsl(203, 39%, 44%);
     font-family: 'Barlow', sans-serif;
+}
+
+.skillsDiv {
+  background-color: #dbe0e2;
 }
 
 .stars {

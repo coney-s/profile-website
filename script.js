@@ -88,14 +88,14 @@ window.addEventListener("load", function() {
 
                 eduElement.innerHTML = `
                     <div class="flex-container">
-                        <div class="item item-1>
-                            <img src="${schools[i].image}" alt="A logo" style="width: 100px; height:100 px;">
-                            <h3 style="color: #6f4e37;"><strong>${schools[i].institution}</strong></h3>
+                        <div class="item item-1">
+                            <img src="${schools[i].image}" alt="A logo" style="width: 100px; height:100px;">
+                            
                             <p>${schools[i].location}</p>
                         </div>
-                        <div class="item item-2>
-                            <h3 style="color: #6f4e37;"><strong>${schools[i].degree}</strong></h3>
-                            <p>${schools[i].description}</p>
+                        <div class="item item-2">
+                        <h3 style="color: #6f4e37; margin-bottom: 0px"><strong>${schools[i].institution}</strong></h3>
+                        <p style="margin-top: 5px">${schools[i].degree}</p>
                         </div>
                     </div>        
                 `;
