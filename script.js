@@ -1,35 +1,5 @@
 
 
-let jobs = [
-    {company: "Paraquad", 
-     date: "July 2021 - present",
-     position: "Part-time - LaunchCode Computer Tutor",
-     description: "As the computer tutor for Paraquad's LaunchCode students, I collaborate with both Paraquad and LaunchCode to support our students in their dreams of becoming employed in the technology field. I teach the studio portion of class, breaking down and explaining difficult concepts. I focus on problem-solving strategies, and goal setting to help our students succeed in their chosen field. I also maintain a high degree of classroom management and case management to ensure student progress, and collaborate to connect students with additional supports and services as needed.",
-     location: "St. Louis, MO"   
-    },
-    {
-        company: "LaunchCode",
-        date: "December 2020 - July 2021",
-        position: "Part-time - Tech Leadership Fellow",
-        description: "As a TA for LaunchCode's LC101 course, I was responsible for creating a safe, open space for learning as well as organizing and leading studio groups in community building. I assisted students with learning problem solving and language. I also had to break down and explain technical concepts to students with varying levels of experience. It was my responsibility to grade students assignments, target problem areas, and help students who were struggling.",
-        location: "St. Louis, MO"
-    },
-    {
-        company: "Storyville",
-        date: "January 2020 - present",
-        position: "Part-time - Web Designer and Social Media Manager",
-        description: "As the web designer for Storyville, I was responsible not only for designing the website, but designing and troubleshooting the set up of the store and payment systems to allow for different payment plans. I also implement and maintain discounts targeted to diverse groups, write and edit copy for the website, Proofread product for spelling, grammatical errors, clarity, and brevity. I design graphics, curate and schedule content for social media.",
-        location: "Chicago, IL - Remote"
-    },
-    {
-        company: "Books-A-Million",
-        date: "August 2014 - August 2015",
-        position: "Customer Service Specialist",
-        description: "I was promoted from bookseller to Customer Service Specialist at six months, the earliest possible date after hire. I was also named one of the top sales people in the region.",
-        location: "Johnson City, TN"
-    }   
-];
-
 let schools = [
     {
         image: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/341/original/launchcode-20logo.jpeg",
@@ -50,12 +20,12 @@ let schools = [
 ];
 
 window.addEventListener("load", function() {
-    // this.fetch("https://github.com/coney-s/profile-website/blob/main/jobs.json").then(function(response) {
-    //     response.json().then(function(json) {
+    this.fetch("https://coney-s.github.io/profile-website/jobs.json").then(function(response) {
+        response.json().then(function(json) {
 
-    //         console.log(json);
+            console.log(json);
 
-            for (let i = 0; i < jobs.length; i++) {
+            for (let i = 0; i < json.length; i++) {
                 const div = document.getElementById("careers");
 
                 let jobElement = document.createElement('div');
@@ -64,13 +34,13 @@ window.addEventListener("load", function() {
                 jobElement.innerHTML = `
                     <div class="flex-container">
                         <div class="item item-1">
-                            <h3 style="color: #6f4e37;"><strong>${jobs[i].company}</strong></h3>
-                            <p>${jobs[i].date}</p>
+                            <h3 style="color: #6f4e37;"><strong>${json[i].company}</strong></h3>
+                            <p>${json[i].date}</p>
                         </div>
                         <div class="item item-2">
-                            <h3 style="color: #6f4e37;"><strong>${jobs[i].position}</strong></h3>
-                            <p>${jobs[i].description}</p>
-                            <p>${jobs[i].location}</p>
+                            <h3 style="color: #6f4e37;"><strong>${json[i].position}</strong></h3>
+                            <p>${json[i].description}</p>
+                            <p>${json[i].location}</p>
                         </div>
                     </div>  
                     <br>          
@@ -103,5 +73,5 @@ window.addEventListener("load", function() {
                 eduDiv.append(eduElement);
             }
         })
-//     })
-// })
+    })
+})
