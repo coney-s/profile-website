@@ -48,30 +48,30 @@ window.addEventListener("load", function() {
 
                 div.append(jobElement);
             }
-
-            for (let i = 0; i < jobs.length; i ++) {
-                const eduDiv = document.getElementById("education");
-
-                let eduElement = document.createElement('eduDiv');
-                eduElement.className = 'learning';
-                console.log(schools[i].image);
-
-                eduElement.innerHTML = `
-                    <div class="flex-container">
-                        <div class="item item-1">
-                            <img src="${schools[i].image}" alt="A logo" style="width: 100px; height:100px;">
-                            
-                            <p>${schools[i].location}</p>
-                        </div>
-                        <div class="item item-2">
-                        <h3 style="color: #6f4e37; margin-bottom: 0px"><strong>${schools[i].institution}</strong></h3>
-                        <p style="margin-top: 5px">${schools[i].degree}</p>
-                        </div>
-                    </div>        
-                `;
-
-                eduDiv.append(eduElement);
-            }
         })
     })
+
+    for (let i = 0; i < schools.length; i ++) {
+        const eduDiv = document.getElementById("education");
+
+        let eduElement = document.createElement('eduDiv');
+        eduElement.className = 'learning';
+        console.log(schools[i].image);
+
+        eduElement.innerHTML = `
+            <div class="flex-container">
+                <div class="item item-1">
+                    <img src="${schools[i].image}" alt="A logo" style="width: 100px; height:100px;">
+                    
+                    <p>${schools[i].location}</p>
+                </div>
+                <div class="item item-2">
+                <h3 style="color: #6f4e37; margin-bottom: 0px"><strong>${schools[i].institution}</strong></h3>
+                <p style="margin-top: 5px">${schools[i].degree}</p>
+                </div>
+            </div>        
+        `;
+
+        eduDiv.append(eduElement);
+    }
 })
