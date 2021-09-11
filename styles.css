@@ -46,15 +46,29 @@ body {
 
 }
 
+.author-photo {
+  padding-left: 90px;
+}
+
 .titles {
     line-height: 6pt;
     font-family: 'Roboto', sans-serif;
+    padding-top: 90px;
+    padding-right: 120px;
+    flex-direction: row;
 }
 
 .personalStatement {
     font-family: 'Roboto', sans-serif;
     font-size: 13pt;
     line-height: 30px;
+    margin-left: 120px;
+}
+
+#about {
+  color: hsl(203, 39%, 44%); 
+  text-align: center;
+  padding-top: 15px;
 }
 
 .boxes {
@@ -231,6 +245,9 @@ h3.career {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .flex-container{flex-direction: column; flex-wrap: wrap;}
+    .titles {padding-top: 5px;}
+    .
   }
 
   .sectionHeader {
