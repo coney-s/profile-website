@@ -246,8 +246,8 @@ h3.career {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
     .flex-container{flex-direction: column; flex-wrap: wrap;}
-    .titles {padding-top: 5px;}
-    .
+    .titles {padding-top: 5px; text-align: center;}
+    
   }
 
   .sectionHeader {
