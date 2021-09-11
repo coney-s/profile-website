@@ -19,6 +19,15 @@ let schools = [
     }
 ];
 
+function navFunction() {
+    let links = document.getElementById("myLinks");
+    if (links.style.display === "none") {
+      links.style.display = "block";
+    } else {
+      links.style.display = "none";
+    }
+  }
+
 window.addEventListener("load", function() {
     this.fetch("https://coney-s.github.io/profile-website/jobs.json").then(function(response) {
         response.json().then(function(json) {
@@ -74,4 +83,6 @@ window.addEventListener("load", function() {
 
         eduDiv.append(eduElement);
     }
+
+    
 })
