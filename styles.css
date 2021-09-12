@@ -356,8 +356,29 @@ h3.career {
     
     /* Style the active link (or home/logo) */
     .active {
-      background-color: hsl(203, 39%, 44%); ;
+      background-color: hsl(203, 39%, 44%); 
       color: white;
+    }
+
+    /* Hero image */
+    .hero-image {
+      /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+      /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("umbrella-small.jpeg"); */
+      background-color: hsl(203, 39%, 44%);
+      /* Set a specific height */
+      /* height: 50%; */
+      min-height: 500px;
+    
+      /* Position and center the image to scale nicely on all screens */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+  
+      /* background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; */
     }
 
     /* Text on hero image */
