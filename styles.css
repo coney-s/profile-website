@@ -43,31 +43,36 @@ header {
 }
 body {
 
-    /* padding-left: 50px;
-    padding-right: 50px; */
     line-height: 20px;
-    /* padding-bottom: 50px; */
-    
-
+    margin:auto;
 }
 
 .author-photo {
-  padding-left: 90px;
+  /* padding-left: 40px; */
+  margin: auto;
 }
 
 .titles {
-    line-height: 6pt;
+    line-height: 20px;
     font-family: 'Roboto', sans-serif;
-    padding-top: 90px;
-    padding-right: 120px;
-    flex-direction: row;
+    /* padding-top: 90px; */
+    /* padding-right: 30px; */ 
+    /* flex-direction: row; */
+    padding-left: 5px;
+    flex-wrap: wrap;
+    margin:auto;
+}
+
+.prof {
+  justify-content: center;
 }
 
 .personalStatement {
     font-family: 'Roboto', sans-serif;
     font-size: 13pt;
     line-height: 30px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
+    margin:auto;
 }
 
 #about {
@@ -162,7 +167,7 @@ h3.career {
 
 .flex-container {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
 }
 
 .item {
@@ -177,7 +182,7 @@ h3.career {
 }
 
 .item-2 {
-  margin-right: 100px;
+  /* margin-right: 100px; */
   
 }
 
@@ -247,13 +252,7 @@ h3.career {
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    /* .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;} */
-    .flex-container{flex-direction: column; flex-wrap: wrap;}
-    .titles {padding-top: 5px; text-align: center;}
-    
-  }
+  
 
   .sectionHeader {
     font-family: 'Roboto', sans-serif;
@@ -391,6 +390,50 @@ h3.career {
       color: white;
       line-height:normal;
     }
+
+    .flex-container {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .item-1 {
+      margin-left: 0px;
+    }
+
+    .titles {
+      line-height: 20px;
+      font-family: 'Roboto', sans-serif;
+      padding-top: 0px;
+      padding-right: 0px;
+      /* flex-direction: row; */
+      padding-left: 5px;
+      flex-wrap: wrap;
+      text-align: center;
+      
+  }
+  .author-photo {
+    padding-left: 0px;
+    align-items: center;
+  }
+  .item-1, .itme-2 {
+    flex: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+
+  .innerContents {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .personalStatement {
+    text-align: center;
+    margin: 10px;
+  }
     
   }
 
