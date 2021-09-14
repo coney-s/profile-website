@@ -48,19 +48,20 @@ body {
 }
 
 .author-photo {
-  /* padding-left: 40px; */
+  padding-left: 20px;
   margin: auto;
+  justify-content: center;
 }
 
 .titles {
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
-    /* padding-top: 90px; */
-    /* padding-right: 30px; */ 
-    /* flex-direction: row; */
+    /* padding-right: 95px;  */
+    /* flex-direction: row; */ /*This looks good in a smaller window on the computer, and it looks good in the mobible, but it looks bad in full screen*/
     padding-left: 5px;
     flex-wrap: wrap;
     margin:auto;
+    justify-content: center;
 }
 
 .prof {
@@ -71,8 +72,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 13pt;
     line-height: 30px;
-    /* margin-left: 120px; */
-    margin:auto;
+    margin-left: 120px;
 }
 
 #about {
@@ -432,7 +432,7 @@ h3.career {
 
   .personalStatement {
     text-align: center;
-    margin: 10px;
+    margin: 15px;
   }
     
   }
