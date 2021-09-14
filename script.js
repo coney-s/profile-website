@@ -19,6 +19,33 @@ let schools = [
     }
 ];
 
+let publications = [
+    {image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349051341l/16056046.jpg",
+     title: "'Dead by Dawn'",
+     publishedIn: "Noir at the Bar: Volume 2",
+     editors: "Jedidiah Ayers and Scott Phillips",
+     year: "(2012)",
+     pages: "160 - 180",
+     awards: ""
+     },
+     {image: "https://images-na.ssl-images-amazon.com/images/I/81a-7vbki0L.jpg",
+      title: "'Abandoned Places'",
+      publishedIn: "St. Louis Noir",
+      editors: "Scott Phillips",
+      year: "(2016)",
+      pages: "19 - 36",
+      awards: "Reprinted in Best American Mystery Stories 2017, edited by Otto Penzler and John Sandford. (2017), 104 - 117."
+     },
+     {image: "https://images.squarespace-cdn.com/content/v1/599cdaacccc5c53c01d20680/1507605637917-2AQWZ0UFOWV4Z7OTQG2O/Prey.jpg?format=1500w",
+      title: "Prey",
+      publishedIn: "Gamut Magazine",
+      editors: "Richard Thomas",
+      year: "(October, 2017)",
+      pages: "",
+      awards: "Named one of the best stories in Gamut by Ellen Datlow"
+     }
+ ]
+
 function navFunction() {
     let links = document.getElementById("myLinks");
     if (links.style.display === "none") {
@@ -82,45 +109,42 @@ window.addEventListener("load", function() {
         `;
 
         eduDiv.append(eduElement);
+  
+    }
 
-        this.fetch("https://coney-s.github.io/profile-website/publications.json").then(function(response) {
-        response.json().then(function(json) {
+    // this.fetch("https://coney-s.github.io/profile-website/publications.json").then(function(response) {
+        // response.json().then(function(json) {
 
-            console.log(json);
+        //     console.log(json);
 
-            for (let i = 0; i < json.length; i++){
-                let award = document.getElementById("awards");
+        for (let i = 0; i < publications.length; i++){
+                
+            const pubDiv = document.getElementById("pubs");
 
-                if (json[i].awards !== "") {
-                    award.style.display = "block";
-                } else {
-                    award.style.display = "none !important";
-                }
-                const pubDiv = document.getElementById("pubs");
+            let pubElement = document.createElement("pubDiv");
+            pubElement.className = "publication";
 
-                let pubElement = document.createElement("pubDiv");
-                pubElement.className = "publication";
-
-                pubElement.innerHTML = `
-                <div class="flex-container">
-                    <div class="item item-1">
-                        <img src="${json[i].image}" alt="Book Cover" style="wwidth: 100px;
-                        height: 150px;">
+            pubElement.innerHTML = `
+            <div class="flex-container">
+                <div class="item item-1">
+                    <img src="${publications[i].image}" alt="Book Cover" style="wwidth: 100px;
+                    height: 150px; max-width: 25%; justify-contents: center";>
+                </div>
+                <div class="item item-2">
+                    <h3>${publications[i].title}</h3>
+                    <p>In ${publications[i].publishedIn} edited by ${publications[i].editors}. ${publications[i].year}. ${publications[i].pages}</p>
+                    <div id="awards">
+                        <p>${publications[i].awards}</p>
                     </div>
-                    <div class="item item-2">
-                        <h3>${json[i].title}</h3>
-                        <p>In ${json[i].publishedIn} edited by ${json[i].editors}. ${json[i].year}. ${json[i].pages}</p>
-                        <div id="awards">
-                            <p>${json[i].awards}</p>
-                        </div>
-                    </div>    
-                `;
+                </div>    
+            `;
 
-                pubDiv.append(pubElement);
+            pubDiv.append(pubElement);
 
-            }
-        })  
-    })
+            
+
+        }
+    // })
 
     
-}})
+})
