@@ -82,7 +82,45 @@ window.addEventListener("load", function() {
         `;
 
         eduDiv.append(eduElement);
-    }
+
+        this.fetch("https://coney-s.github.io/profile-website/publications.json").then(function(response) {
+        response.json().then(function(json) {
+
+            console.log(json);
+
+            for (let i = 0; i < json.length; i++){
+                let award = document.getElementById("awards");
+
+                if (json[i].awards !== "") {
+                    award.style.display = "block";
+                } else {
+                    award.style.display = "none !important";
+                }
+                const pubDiv = document.getElementById("pubs");
+
+                let pubElement = document.createElement("pubDiv");
+                pubElement.className = "publication";
+
+                pubElement.innerHTML = `
+                <div class="flex-container">
+                    <div class="item item-1">
+                        <img src="${json[i].image}" alt="Book Cover" style="wwidth: 100px;
+                        height: 150px;">
+                    </div>
+                    <div class="item item-2">
+                        <h3>${json[i].title}</h3>
+                        <p>In ${json[i].publishedIn} edited by ${json[i].editors}. ${json[i].year}. ${json[i].pages}</p>
+                        <div id="awards">
+                            <p>${json[i].awards}</p>
+                        </div>
+                    </div>    
+                `;
+
+                pubDiv.append(pubElement);
+
+            }
+        })  
+    })
 
     
-})
+}})
