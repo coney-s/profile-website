@@ -1,7 +1,7 @@
 
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("umbrella.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./resources/umbrella.jpeg");
   
     /* Set a specific height */
     /* height: 50%; */
@@ -168,6 +168,7 @@ h3.career {
 .flex-container {
   display: flex;
   flex-direction: row;
+  
 }
 
 .item {
@@ -340,11 +341,12 @@ h3.career {
     
     /* Style the hamburger menu */
     .topnav a.icon {
-      background: black;
+      background: silver;
       display: block;
       position: absolute;
       right: 0;
       top: 0;
+      height: 30px;
     }
     
     /* Add a grey background color on mouse-over */
@@ -362,7 +364,7 @@ h3.career {
     /* Hero image */
     .hero-image {
       /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-      /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("umbrella-small.jpeg"); */
+      /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./resources/umbrella-small.jpeg"); */
       background-color: hsl(203, 39%, 44%);
       /* Set a specific height */
       /* height: 50%; */
