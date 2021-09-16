@@ -34,7 +34,7 @@ let publications = [
       editors: "Scott Phillips",
       year: "(2016)",
       pages: "19 - 36",
-      awards: "Reprinted in Best American Mystery Stories 2017, edited by Otto Penzler and John Sandford. (2017), 104 - 117."
+      awards: "Reprinted in <em>Best American Mystery Stories 2017</em>, edited by Otto Penzler and John Sandford. (2017), 104 - 117."
      },
      {image: "https://images.squarespace-cdn.com/content/v1/599cdaacccc5c53c01d20680/1507605637917-2AQWZ0UFOWV4Z7OTQG2O/Prey.jpg?format=1500w",
       title: "Prey",
@@ -112,12 +112,10 @@ window.addEventListener("load", function() {
   
     }
 
-    // this.fetch("https://coney-s.github.io/profile-website/publications.json").then(function(response) {
-        // response.json().then(function(json) {
+    this.fetch("https://coney-s.github.io/profile-website/publications.json").then(function(response) {
+        response.json().then(function(json) {
 
-        //     console.log(json);
-
-        for (let i = 0; i < publications.length; i++){
+        for (let i = 0; i < json.length; i++){
                 
             const pubDiv = document.getElementById("pubs");
 
@@ -127,14 +125,14 @@ window.addEventListener("load", function() {
             pubElement.innerHTML = `
             <div class="flex-container">
                 <div class="item item-1">
-                    <img src="${publications[i].image}" alt="Book Cover" style="wwidth: 100px;
-                    height: 150px; max-width: 25%; justify-contents: center";>
+                    <img src="${json[i].image}" alt="Book Cover" style="wwidth: 100px;
+                    height: 150px; max-width: 25%; min-width: 100px; justify-contents: center";>
                 </div>
-                <div class="item item-2">
-                    <h3>${publications[i].title}</h3>
-                    <p>In ${publications[i].publishedIn} edited by ${publications[i].editors}. ${publications[i].year}. ${publications[i].pages}</p>
+                <div class="item item-2 pubDetail">
+                    <h3>${json[i].title}</h3>
+                    <p>In <em>${json[i].publishedIn}</em> edited by ${json[i].editors}. ${json[i].year}. ${json[i].pages}</p>
                     <div id="awards">
-                        <p>${publications[i].awards}</p>
+                        <p>${json[i].awards}</p>
                     </div>
                 </div>    
             `;
@@ -144,7 +142,7 @@ window.addEventListener("load", function() {
             
 
         }
-    // })
-
+    })
+})
     
 })
