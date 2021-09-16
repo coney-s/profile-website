@@ -181,10 +181,10 @@ h3.career {
   margin-left: 120px;
 }
 
-.item-2 {
-  /* margin-right: 100px; */
+/* .item-2 {
+  This was already commented out margin-right: 100px;
   
-}
+} */
 
 
 
@@ -434,7 +434,16 @@ h3.career {
     text-align: center;
     margin: 15px;
   }
+
+  .pubDetail {
+    text-align: center;
+    margin: auto;
+  }
     
+  }
+
+  h3.pubDetail {
+    color: #6f4e37;
   }
 
 .logo {

@@ -19,6 +19,33 @@ let schools = [
     }
 ];
 
+let publications = [
+    {image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349051341l/16056046.jpg",
+     title: "'Dead by Dawn'",
+     publishedIn: "Noir at the Bar: Volume 2",
+     editors: "Jedidiah Ayers and Scott Phillips",
+     year: "(2012)",
+     pages: "160 - 180",
+     awards: ""
+     },
+     {image: "https://images-na.ssl-images-amazon.com/images/I/81a-7vbki0L.jpg",
+      title: "'Abandoned Places'",
+      publishedIn: "St. Louis Noir",
+      editors: "Scott Phillips",
+      year: "(2016)",
+      pages: "19 - 36",
+      awards: "Reprinted in <em>Best American Mystery Stories 2017</em>, edited by Otto Penzler and John Sandford. (2017), 104 - 117."
+     },
+     {image: "https://images.squarespace-cdn.com/content/v1/599cdaacccc5c53c01d20680/1507605637917-2AQWZ0UFOWV4Z7OTQG2O/Prey.jpg?format=1500w",
+      title: "Prey",
+      publishedIn: "Gamut Magazine",
+      editors: "Richard Thomas",
+      year: "(October, 2017)",
+      pages: "",
+      awards: "Named one of the best stories in Gamut by Ellen Datlow"
+     }
+ ]
+
 function navFunction() {
     let links = document.getElementById("myLinks");
     if (links.style.display === "none") {
@@ -82,7 +109,40 @@ window.addEventListener("load", function() {
         `;
 
         eduDiv.append(eduElement);
+  
     }
 
+    this.fetch("https://coney-s.github.io/profile-website/publications.json").then(function(response) {
+        response.json().then(function(json) {
+
+        for (let i = 0; i < json.length; i++){
+                
+            const pubDiv = document.getElementById("pubs");
+
+            let pubElement = document.createElement("pubDiv");
+            pubElement.className = "publication";
+
+            pubElement.innerHTML = `
+            <div class="flex-container">
+                <div class="item item-1">
+                    <img src="${json[i].image}" alt="Book Cover" style="wwidth: 100px;
+                    height: 150px; max-width: 25%; min-width: 100px; justify-contents: center";>
+                </div>
+                <div class="item item-2 pubDetail">
+                    <h3>${json[i].title}</h3>
+                    <p>In <em>${json[i].publishedIn}</em> edited by ${json[i].editors}. ${json[i].year}. ${json[i].pages}</p>
+                    <div id="awards">
+                        <p>${json[i].awards}</p>
+                    </div>
+                </div>    
+            `;
+
+            pubDiv.append(pubElement);
+
+            
+
+        }
+    })
+})
     
 })
