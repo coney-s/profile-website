@@ -56,7 +56,7 @@ function navFunction() {
   }
 
 window.addEventListener("load", function() {
-    this.fetch("https://coney-s.github.io/profile-website/jobs.json").then(function(response) {
+    this.fetch("https://coney-s.github.io/profile-website/jobs.json", {cache: "no-store"}).then(function(response) {
         response.json().then(function(json) {
 
             console.log(json);
@@ -112,7 +112,7 @@ window.addEventListener("load", function() {
   
     }
 
-    this.fetch("https://coney-s.github.io/profile-website/publications.json").then(function(response) {
+    this.fetch("https://coney-s.github.io/profile-website/publications.json", {cache: "no-store"}).then(function(response) {
         response.json().then(function(json) {
 
         for (let i = 0; i < json.length; i++){
