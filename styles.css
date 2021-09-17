@@ -308,6 +308,12 @@ h3.career {
     display: none;
   }
 
+  .subheading {
+    color: hsl(203, 39%, 44%); 
+    text-align:left; 
+    margin-left:120px;
+  }
+
   @media screen and (max-width: 700px) {
     .sidenav {
       display: none !important;
@@ -318,11 +324,6 @@ h3.career {
       background-color: hsl(203, 39%, 44%); ;
       position: relative;
     }
-    
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    /* .topnav #myLinks {
-      display: none;
-    } */
     
     /* Style navigation menu links */
     .topnav a {
@@ -346,7 +347,6 @@ h3.career {
       position: absolute;
       right: 0;
       top: 0;
-      height: 30px;
     }
     
     /* Add a grey background color on mouse-over */
@@ -375,11 +375,6 @@ h3.career {
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
-  
-      /* background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; */
     }
 
     /* Text on hero image */
@@ -440,6 +435,26 @@ h3.career {
   .pubDetail {
     text-align: center;
     margin: auto;
+  }
+
+  .career {
+    text-align: center;
+    margin: 15px;
+    flex-direction: column;
+   
+  }
+
+  .subheading {
+    color: hsl(203, 39%, 44%); 
+    text-align:center; 
+    margin: auto;
+  } 
+
+  .education {
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+   
   }
     
   }
