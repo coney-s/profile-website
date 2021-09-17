@@ -1,5 +1,3 @@
-
-
 let schools = [
     {
         image: "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/341/original/launchcode-20logo.jpeg",
@@ -19,32 +17,7 @@ let schools = [
     }
 ];
 
-let publications = [
-    {image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349051341l/16056046.jpg",
-     title: "'Dead by Dawn'",
-     publishedIn: "Noir at the Bar: Volume 2",
-     editors: "Jedidiah Ayers and Scott Phillips",
-     year: "(2012)",
-     pages: "160 - 180",
-     awards: ""
-     },
-     {image: "https://images-na.ssl-images-amazon.com/images/I/81a-7vbki0L.jpg",
-      title: "'Abandoned Places'",
-      publishedIn: "St. Louis Noir",
-      editors: "Scott Phillips",
-      year: "(2016)",
-      pages: "19 - 36",
-      awards: "Reprinted in <em>Best American Mystery Stories 2017</em>, edited by Otto Penzler and John Sandford. (2017), 104 - 117."
-     },
-     {image: "https://images.squarespace-cdn.com/content/v1/599cdaacccc5c53c01d20680/1507605637917-2AQWZ0UFOWV4Z7OTQG2O/Prey.jpg?format=1500w",
-      title: "Prey",
-      publishedIn: "Gamut Magazine",
-      editors: "Richard Thomas",
-      year: "(October, 2017)",
-      pages: "",
-      awards: "Named one of the best stories in Gamut by Ellen Datlow"
-     }
- ]
+
 
 function navFunction() {
     let links = document.getElementById("myLinks");
