@@ -17,6 +17,80 @@ let schools = [
     }
 ];
 
+let skills = [
+    {abilityOne: "Java",
+     starsOne: "&starf;&starf;&starf;&starf;&star;",
+     abilityTwo: "JavaScript",
+     starsTwo: "&starf;&starf;&starf;&star;&star;"   
+    },
+    {
+     abilityOne: "HTML/CSS",
+     starsOne: "&starf;&starf;&starf;&star;&star;",
+     abilityTwo: "Typescript",
+     starsTwo: "&starf;&starf;&starf;&starf;&star;"
+    },
+    {
+     abilityOne: "SpringBoot",
+     starsOne: "&starf;&starf;&starf;&star;&star;",
+     abilityTwo: "Hibernate",
+     starsTwo: "&starf;&starf;&starf;&star;&star;",
+    },
+    {
+     abilityOne: "Angular",
+     starsOne: "&starf;&starf;&starf;&star;&star;",
+     abilityTwo: "Bootstrap",
+     starsTwo: "&starf;&starf;&starf;&star;&star;",
+    },
+    {
+     abilityOne: "JSON",
+     starsOne: "&starf;&starf;&starf;&starf;&star;",
+     abilityTwo: "jQuery (Next)",
+     starsTwo: "&star;&star;&star;&star;&star;",
+    },
+    {
+     abilityOne: "MySQL",
+     starsOne: "&starf;&starf;&star;&star;&star;",
+     abilityTwo: "MongoDB (Next)",
+     starsTwo: "&star;&star;&star;&star;&star;",
+    },
+    {
+     abilityOne: "GitHub",
+     starsOne: "&starf;&starf;&starf;&starf;&star;",
+     abilityTwo: "IntelliJ IDEA",
+     starsTwo: "&starf;&starf;&starf;&star;&star;",
+    },
+    {
+     abilityOne: "Slack",
+     starsOne: "&starf;&starf;&starf;&starf;&starf;",
+     abilityTwo: "Trello",
+     starsTwo: "&starf;&starf;&starf;&starf;&star;",
+    },
+    {
+     abilityOne: "Leadership",
+     starsOne: "&starf;&starf;&starf;&starf;&star;",
+     abilityTwo: "Troubleshooting",
+     starsTwo: "&starf;&starf;&starf;&starf;&star;",
+    },
+    {
+     abilityOne: "Mentoring",
+     starsOne: "&starf;&starf;&starf;&starf;&starf;",
+     abilityTwo: "Test-Driven Development",
+     starsTwo: "&starf;&starf;&starf;&starf;&star;",
+    },
+    {
+     abilityOne: "Object-Oriented Programming",
+     starsOne: "&starf;&starf;&starf;&star;&star;",
+     abilityTwo: "MVC",
+     starsTwo: "&starf;&starf;&starf;&star;&star;",
+    },
+    {
+     abilityOne: "Written Communication",
+     starsOne: "&starf;&starf;&starf;&starf;&starf;",
+     abilityTwo: "Oral Communication",
+     starsTwo: "&starf;&starf;&starf;&starf;&star;",
+    }
+]
+
 
 
 function navFunction() {
@@ -102,7 +176,7 @@ window.addEventListener("load", function() {
                     height: 150px; max-width: 25%; min-width: 100px; justify-contents: center";>
                 </div>
                 <div class="item item-2 pubDetail">
-                    <h3>${json[i].title}</h3>
+                    <h3 style="color:#6f4e37;">${json[i].title}</h3>
                     <p>In <em>${json[i].publishedIn}</em> edited by ${json[i].editors}. ${json[i].year}. ${json[i].pages}</p>
                     <div id="awards">
                         <p>${json[i].awards}</p>
@@ -117,5 +191,41 @@ window.addEventListener("load", function() {
         }
     })
 })
+
+    for (let i = 0; i < skills.length; i++) {
+        const skillDiv = document.getElementById("mySkills");
+
+        let skillElement = document.createElement('skillDiv');
+        skillElement.className = 'skill';
+        
+
+        skillElement.innerHTML = `
+            <div class="flex-container">
+            <div class="item item-1"">
+                <ul style="list-style-type:none;">
+                    <li id="aSkill">
+                        <span class="skillTitle" style="font-family: 'Roboto'; color:#6f4e37;"><strong>${skills[i].abilityOne}</strong></span>
+                        <span class="stars">${skills[i].starsOne}</span>
+                    </li>    
+                </ul>
+            </div>
+            <div class="item item-2">
+                <ul style="list-style-type:none">
+                <li id="anotherSkill">
+                    <span class="skillTitle" style="font-family: 'Roboto'; color:#6f4e37;"><strong>${skills[i].abilityTwo}</strong></span>
+                    <span class="stars">${skills[i].starsTwo}</span>
+                </li>    
+                </ul>
+            </div>    
+            </div>  
+            
+        `;
+
+        skillDiv.append(skillElement);
+        
+    }
     
 })
+
+            
+
