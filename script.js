@@ -17,6 +17,21 @@ let schools = [
     }
 ];
 
+let skills = [
+    {category: "Programming Languages",
+     abilityOne: "Java",
+     starsOne: "&starf;&starf;&starf;&starf;&star;",
+     abilityTwo: "JavaScript",
+     starsTwo: "&starf;&starf;&starf;&star;&star;"   
+    },
+    {category:"",
+     abilityOne: "HTML/CSS",
+     starsOne: "&starf;&starf;&starf;&star;&star;",
+     abilityTwo: "Typescript",
+     starsTwo: "&starf;&starf;&starf;&starf;&star;"
+    }
+]
+
 
 
 function navFunction() {
@@ -117,5 +132,53 @@ window.addEventListener("load", function() {
         }
     })
 })
+
+    for (let i = 0; i < skills.length; i++) {
+        const skillDiv = document.getElementById("mySkills");
+
+        let skillElement = document.createElement('skillDiv');
+        skillElement.className = 'skill';
+        
+
+        skillElement.innerHTML = `
+            <h3 class="subheading">${skills[i].category}</h3>
+
+            <table cellspacing="50">
+                
+                <tr>
+                    <td>
+                        <h3 style="font-family: 'Roboto'; color:#6f4e37">${skills[i].abilityOne}</h3>
+                    </td>
+                    <td>
+                        <p class="stars">${skills[i].starsOne}</p>
+                    </td>
+                    <td>
+                        <h3 style="font-family: 'Roboto'; color:#6f4e37">${skills[i].abilityTwo}</h3>
+                    </td>
+                    <td class="forStars">
+                        <p class="stars">${skills[i].starsTwo}</p>
+                    </td>
+                </tr>
+            </table>
+        `;
+
+        skillDiv.append(skillElement);
+    }
     
 })
+
+{/* <div class="flex-container">
+                <div class="item item-1 skillName">
+                    <h3 style="font-family: 'Roboto'; color:#6f4e37">${skills[i].abilityOne}</h3>
+                </div>
+                <div class="forStars">
+                    <p class="stars">${skills[i].starsOne}</p>
+                </div>
+                <div class="item item-1 skillName">
+                    <h3 style="font-family: 'Roboto'; color:#6f4e37">${skills[i].abilityTwo}</h3>
+                </div>
+                <div class="forStars">
+                    <p class="stars">${skills[i].starsTwo}</p>
+                </div>
+            </div>         */}
+
