@@ -509,7 +509,8 @@ image {
 }
 
 footer {
-  background-color: #dbe0e2;
+  /* background-color: #dbe0e2; */
+  background-color: whitesmoke;
   text-align: center;
   padding-bottom: 20px;
 }
