@@ -19,7 +19,7 @@ let schools = [
 
 let skills = [
     {abilityOne: "Java",
-     starsOne: "&starf;&starf;&starf;&starf;&star;",
+     starsOne: "&starf;&starf;&starf;&star;&star;",
      abilityTwo: "JavaScript",
      starsTwo: "&starf;&starf;&starf;&star;&star;"   
     },
@@ -27,7 +27,7 @@ let skills = [
      abilityOne: "HTML/CSS",
      starsOne: "&starf;&starf;&starf;&star;&star;",
      abilityTwo: "Typescript",
-     starsTwo: "&starf;&starf;&starf;&starf;&star;"
+     starsTwo: "&starf;&starf;&starf;&star;&star;"
     },
     {
      abilityOne: "SpringBoot",

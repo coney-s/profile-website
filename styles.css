@@ -76,7 +76,7 @@ body {
 }
 
 #about {
-  color: hsl(203, 39%, 44%); 
+  color: #2a9d8f;
   text-align: center;
   padding-top: 15px;
 }
@@ -209,7 +209,7 @@ h3.career {
 }
 
 .skillsDiv {
-  background-color: #dbe0e2;
+  background-color: #D7D7D7ff;
   padding-bottom: 50px;
 }
 
@@ -221,7 +221,7 @@ h3.career {
     z-index: 1; /* Stay on top */
     top: 20px; /* Stay at the top */
     left: 0;
-    background-color: hsl(203, 39%, 44%);
+    background-color: #0C0C0Cff;
     overflow-x: hidden; /* Disable horizontal scroll */
     /* padding-top: 20px; */
     margin-left: 50px; 
@@ -235,13 +235,14 @@ h3.career {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #f3eded;
+    color: whitesmoke;
     display: block;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    background-color: whitesmoke;
+    color:#0C0C0Cff;
   }
   
   /* Style page content */
@@ -256,7 +257,7 @@ h3.career {
   .sectionHeader {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: hsl(203, 39%, 44%);
+    color: #2a9d8f;
     font-size: 20pt;
     padding-top: 20px;
   }
@@ -281,13 +282,15 @@ h3.career {
   .publicationsDiv {
       /* background-color: #AFCCD6; */
       padding-bottom: 20px;
-      background-color: #dbe0e2;
+      /* background-color: #dbe0e2; */
+      background-color: #D7D7D7ff;
   }
 
   .nav-content a:hover {
-      background-color: silver;
-      outline: 15px solid silver;
-      color: hsl(203, 39%, 44%);
+      background-color: whitesmoke;
+      outline: 15px solid whitesmoke;
+      color: black;
+      font-weight:bold;
   }
 
   .nav-content {
@@ -307,7 +310,7 @@ h3.career {
   }
 
   .subheading {
-    color: hsl(203, 39%, 44%); 
+    color: #2a9d8f; 
     text-align:left; 
     margin-left:120px;
     font-family: 'Roboto';
@@ -324,7 +327,7 @@ h3.career {
   }
 
   .stars {
-    color: hsl(203, 39%, 44%);
+    color: #2a9d8f;
     font-size: 12pt;
     
 }
@@ -345,13 +348,13 @@ ul li:hover {
     .topnav {
       display: block !important;
       overflow: hidden;
-      background-color: hsl(203, 39%, 44%); ;
+      background-color: #0C0C0Cff;
       position: relative;
     }
     
     /* Style navigation menu links */
     .topnav a {
-      color:#f3eded;
+      color:whitesmoke;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -360,13 +363,13 @@ ul li:hover {
     }
 
     .topnav a:hover {
-      background-color: silver;
-      color: hsl(203, 39%, 44%);
+      background-color: whitesmoke;
+      color: #0C0C0Cff;;
     }
     
     /* Style the hamburger menu */
     .topnav a.icon {
-      background: silver;
+      background: #0C0C0Cff;;
       display: block;
       position: absolute;
       right: 0;
@@ -375,8 +378,8 @@ ul li:hover {
     
     /* Add a grey background color on mouse-over */
     .topnav a:hover {
-      background-color: #ddd;
-      color: black;
+      background-color: whitesmoke;
+      color: #0C0C0Cff;;
     }
     
     /* Style the active link (or home/logo) */
