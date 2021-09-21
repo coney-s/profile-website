@@ -181,7 +181,9 @@ window.addEventListener("load", function() {
                     <div id="awards">
                         <p>${json[i].awards}</p>
                     </div>
-                </div>    
+                </div> 
+            </div>
+            <hr>       
             `;
 
             pubDiv.append(pubElement);
