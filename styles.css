@@ -70,7 +70,7 @@ body {
 
 .personalStatement {
     font-family: 'Roboto', sans-serif;
-    font-size: 13pt;
+    font-size: 1.0625rem;
     line-height: 30px;
     margin-left: 120px;
 }
@@ -234,7 +234,7 @@ h3.career {
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #f3eded;
     display: block;
   }
@@ -257,7 +257,7 @@ h3.career {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: hsl(203, 39%, 44%);
-    font-size: 20pt;
+    font-size: 1.6875rem;
     padding-top: 20px;
   }
 
@@ -316,7 +316,7 @@ h3.career {
   .skillTitle {
     font-family: 'Roboto'; 
     color:#6f4e37;
-    font-size: 13pt;
+    font-size: 1.0625rem;
     text-align: left;
     display:inline-block;
     width: 250px;
@@ -325,7 +325,7 @@ h3.career {
 
   .stars {
     color: hsl(203, 39%, 44%);
-    font-size: 12pt;
+    font-size: 1rem;
     
 }
 
@@ -335,7 +335,7 @@ ul {
 
 ul li:hover {
   background-color: silver;
-  font-size: 25pt;
+  font-size: 2.0625rem;
 }
 
   @media screen and (max-width: 700px) {
@@ -354,7 +354,7 @@ ul li:hover {
       color:#f3eded;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 1.0625rem;
       display: block;
       font-family: 'Roboto';
     }
