@@ -170,8 +170,8 @@ window.addEventListener("load", function() {
             pubElement.className = "publication";
 
             pubElement.innerHTML = `
-            <div class="flex-container">
-                <div class="item item-1">
+            <div class="flex-container myPub">
+                <div class="item item-1 book">
                     <img src="${json[i].image}" alt="Book Cover" style="wwidth: 100px;
                     height: 150px; max-width: 25%; min-width: 100px; justify-contents: center";>
                 </div>
