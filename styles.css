@@ -34,7 +34,7 @@ header {
 }
 
 .name {
-  font-size: 3.5rem;
+  font-size: 5rem;
   line-height: .5;
 }
 
@@ -55,6 +55,7 @@ header {
   /* Disable horizontal scroll */
   /* padding-top: 20px; */
   margin-left: 75px;
+  /* margin-left: 1000px; */
   margin-top: 50px;
   /* padding-bottom: 20px; */
   border-radius: 5px;
@@ -112,6 +113,7 @@ header {
 body {
   line-height: 20px;
   margin: auto;
+  max-width: 1450px;
 }
 
 body,
@@ -228,11 +230,11 @@ h3.career {
 }
 
 .sectionHeader {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: hsl(203, 39%, 44%);
   /* font-size: 1.6875rem; */
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   padding-top: 20px;
   padding-bottom: 7%;
 
