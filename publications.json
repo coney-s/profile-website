@@ -13,7 +13,7 @@
         "editors": "Scott Phillips",
         "year": "(2016)",
         "pages": "19 - 36",
-        "awards": "Reprinted in <em>Best American Mystery Stories 2017</em>, edited by Otto Penzler and John Sandford. (2017), 104 - 117."
+        "awards": "Reprinted in <span class='green'><em>Best American Mystery Stories 2017</em></span>, edited by Otto Penzler and John Sandford. (2017), 104 - 117."
     },
     {"image": "https://images.squarespace-cdn.com/content/v1/599cdaacccc5c53c01d20680/1507605637917-2AQWZ0UFOWV4Z7OTQG2O/Prey.jpg?format=1500w",
      "title": "Prey",
@@ -21,6 +21,6 @@
      "editors": "Richard Thomas",
      "year": "(October, 2017)",
      "pages": "",
-     "awards": "Named one of the best stories in <em>Gamut Magazine</em> by Ellen Datlow"
+     "awards": "Named one of the <span class='green>notable</span> stories in <em>Gamut Magazine</em> by <span class='green'>Ellen Datlow</span>."
     }
 ]
